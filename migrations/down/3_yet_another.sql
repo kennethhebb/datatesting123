@@ -1,0 +1,1 @@
+DROP TABLE yet_another;
