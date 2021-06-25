@@ -30,8 +30,7 @@ func (cfg *Config) Load(args []string) error {
 		&cfg.DatabaseURL,
 		"db",
 		"database-url",
-		//os.GetStringEnv("DATABASE_URL"),
-		"postgres://postgres:123456789@localhost:5434/cloud?sslmode=disable",
+		osx.GetStringEnv("DATABASE_URL"),
 		"The URL of a database to connect to",
 	)
 	fs.IntVar(
